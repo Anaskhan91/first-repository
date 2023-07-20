@@ -1,0 +1,421 @@
+html{
+    scroll-behavior: smooth;
+}
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+font-family: 'Quicksand', sans-serif;
+
+ }
+ #banner{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(Image3.jpg);
+    background-position: center;
+    background-size: cover;
+
+ }
+ .banner-text{
+    width: 70%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    color: #fff;
+
+    transform: translate(-50%,-20%);
+ }
+ .banner-text h1{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: #fff ;
+    line-height: 50px;
+    margin-bottom: 50px;
+ }
+ .box3{
+    color: red;
+    
+ }
+ .banner-text span{
+    color: #7AE98D;
+ }
+
+
+button{
+    display: block;
+    margin:auto;
+    padding: 10px 20px;
+    outline: none;
+    border: 2px solid #7AE98D;
+    color: #fff;
+    border-radius: 5px;
+    background: #7AE98D;
+    font-weight: bold;
+    transition: 0.8s;
+ }
+
+ button #showMenu,#closeMenu{
+    cursor: pointer;
+ }
+ button:hover{
+    border: 2px solid#7AE98D; 
+    background: transparent;
+ }
+
+
+ /*----HEADER----*/
+ .header{
+    width: 100%;
+    background: #7AE98D;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+ }
+ .navbar{
+    width: 85%;
+    margin: auto;
+    display: flex;
+ }
+ .logo{
+    flex-basis: 15%;
+    display: flex;
+    align-items: center;
+ }
+ .logo, .navbar #list , .navbar #list li a ,.row{
+    display: flex;
+    align-items: center;
+}
+
+ .logo img{
+    width: 100px;
+    margin: 5px 0;
+ }
+ 
+ .navbar #list{
+    flex: 1;
+    justify-content: flex-end;
+ }
+ 
+  .navbar #list li{
+    list-style-type: none;
+    margin-left: 25px;
+    padding: 6px 16px;
+    border-radius : 18px;
+    transition: 0.5s;
+  }
+   .navbar #list li:hover{
+    background: black;
+
+   }
+    .navbar #list li a{
+        text-decoration: none;
+        color: black;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .navbar #list li a:hover{
+        color:white;
+    }
+
+
+    .navbar .fa{
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    
+   #sideMenu,#closeMenu{
+        position: absolute;
+        top: 15px;
+        display: none;
+    }
+#sideMenu{
+    width: 22px;
+    right: 50px;
+}
+
+#closeMenu{
+    width: 35px;
+    left: 15px;
+    z-index: 10;
+}
+/*----ABOUT US----*/
+
+
+#about ,
+ #services,
+#testimonials,
+#contact
+ {
+    width: 100#;
+    padding: 100px 0;
+ 
+}
+
+.title{
+    text-decoration: none;
+    width: fit-content;
+    color: #7AE98D;
+    text-align: center;
+    margin: 0 auto 60px;
+    padding: 0 10px 10px;
+    border-bottom: 2px solid #7AE98D;
+    position: relative;
+}
+
+
+.title::after{
+    content: '';
+    width: 40px;
+    height: 8px;
+    background: #7AE98D;
+    position: absolute;
+    left: 48%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+text-align: center;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col-left,
+.col-right{
+    flex-basis: 50%;
+}
+
+.content-image{
+text-align: center;
+
+}
+.content-image img{
+    width: 90%;
+}
+.content{
+    margin-right: 60px;
+}
+h3{
+    color: #f44336;
+    margin-bottom: 30px;
+}
+.content h3{
+    font-size: 40px;
+    color: #7AE98D;
+}
+p{
+    font-size: 15px;
+    line-height: 18px;
+
+}
+#services,
+#contact
+{
+    background: #f7f7f7;
+
+}
+.col{
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.service , .testimonial{
+    border-radius: 5px;
+    padding: 20px 10px;
+    box-shadow: -10px 10px 20px 0px rgba(255, 4, 4, 0.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.service .fa{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background:#7AE98D;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 15px;
+}
+
+.service:hover,
+.testimonial:hover
+{
+    transform: scale(1.05);
+}
+.testimonial{
+    padding: 30px 10px;
+    position: relative;
+    cursor: pointer;
+}
+.testimonial img{
+    width: 60px;
+    box-shadow: -5px 0px 10px -1px rgba(244, 4, 4, 0.22);
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: -15px;
+}
+.info {
+    margin-bottom: 15px;
+}
+.info h3{
+    margin-bottom: 5px;
+    color: #7AE98D;
+
+}
+.info p{
+    margin-bottom: 5px;
+    color: #757575;
+}
+.testimonial .fa{
+    font-size: 15px;
+    color: #7AE98D;
+}
+.testimonial p{
+    line-height: 25px;
+}
+
+.loaction{
+    width: fit-content;
+    margin-bottom: auto;
+}
+.address-line{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.address-line .fa ,.social-icons .fa{
+    color: #7AE98D;
+    margin-right: 15px;
+}
+
+.social-icons{
+    margin-top: 30px;
+    color: #7AE98D;
+
+}
+
+.social-icons .fa{
+    font-size: 22px;
+cursor: pointer;
+color: #7AE98D;
+}
+
+#contact-form{
+    width: 80%;
+    margin: auto;
+    border: 1px solid #7AE98D;
+}
+
+form input , form textarea{
+    width: 100%;
+    padding: 7px 10px;
+    outline: none;
+    border: 1px solid #7AE98D;
+    margin-bottom: 15px;
+    background: transparent;
+}
+
+.input-group{
+    display: flex;
+    justify-content: space-between;
+}
+.input-group input{
+    flex-basis: 48%;
+
+}
+form button{
+    margin: 0;
+    border-radius: 0;
+    font-weight: 100;
+    border: 1px solid #fff !important;
+}
+
+form button: hover{
+color: #000 !important;
+}
+
+.copyright{
+    padding: 15px 0 15px;
+    text-align: center;
+
+    color: #000;
+    margin-top: 50px;
+
+}
+.copyright .fa{
+    color: #7AE98D;
+    font-size: 15px;
+}
+#contact{
+    padding-bottom: 0px;
+}
+@media only screen and (max-width: 768px) {
+        #sideMenu,#closeMenu{
+            display: block;
+        }
+        .navbar #list{
+            width: 50%;
+            height: 100vh;
+            right: -50%;
+            position: fixed;
+            display: inline-block;
+            background: #f44336;
+            padding: 60px 10px 0 10px;
+            box-sizing: border-box;
+            z-index: 1;
+            visibility: hidden;
+            transition: 1s;
+        }
+ .navbar #list li{
+            margin-left: -5px;
+            margin-top: 30px;
+        }
+        .banner-text h1{
+            font-size: 25px;
+            line-height: 35px;
+        }
+.col-left ,
+ .col-right ,
+ .col
+{
+    flex-basis: 100%;
+    text-align: center;
+    color: #7AE98D;
+}
+.content{
+    margin-right: 0px;
+    margin-bottom: 50px;
+}
+
+.col:nth-child(2){
+    margin: 40px 0;
+}
+
+.contact-form{
+    margin-top: 50px;
+}
+.address-line{
+    margin-left: 50px;
+}
+
+
+
+
+#preloader{
+    background: #fff url(images/loader.gif) no-repeat center center;
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}

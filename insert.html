@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+        <html>
+        <head>
+            <title></title>
+        </head>
+        <body>
+        <h1>Data Insert Successfully</h1>
+        </body>
+        </html>
+
+
+<?php
+    include("conn.php");
+?>
+<?php
+
+        $Username = $_POST['user'];
+        $Email = $_POST['email'];
+        $Password = $_POST['pwd'];
+          
+
+        $sql = "INSERT INTO data  VALUES ('$Username','$Email','$Password')";
+          
+        if(mysqli_query($conn, $sql)){
+            echo "<h3>Database Successfully.</h3>";
+ 
+        } 
+        else
+        {
+            echo "<h6>ERROR: Hush! Sorry $sql.</h6> " 
+                . mysqli_error($conn);
+        }
+          
+        // Close connection
+        mysqli_close($conn);
+        ?>
+
+        <br>
+        <br>
+        
+
+       
